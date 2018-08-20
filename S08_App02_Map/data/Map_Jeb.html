@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_606958acbe3845e28e24de5a7a2eed49 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_606958acbe3845e28e24de5a7a2eed49" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_606958acbe3845e28e24de5a7a2eed49 = L.map(
+        'map_606958acbe3845e28e24de5a7a2eed49', {
+        center: [-23.559, -46.678],
+        zoom: 10,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_4e956db7553d42b6b84b0944a6b4da74 = L.tileLayer(
+        'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_606958acbe3845e28e24de5a7a2eed49);
+    
+            var feature_group_679466ee428148709c24947fd76fc1f0 = L.featureGroup(
+                ).addTo(map_606958acbe3845e28e24de5a7a2eed49);
+        
+    
+        var marker_8cf86a133b834947bc3af6e2e7e74d07 = L.marker(
+            [-23.559, -46.678],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_679466ee428148709c24947fd76fc1f0);
+        
+    
+
+                var icon_58408bd3e2884dcc99e76fbd8915441a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightred',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8cf86a133b834947bc3af6e2e7e74d07.setIcon(icon_58408bd3e2884dcc99e76fbd8915441a);
+            
+    
+            var popup_c09289d36e3b46e5912847af24c3c9a1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_60de6fa23bb84131af4fe1af46fe2f55 = $('<div id="html_60de6fa23bb84131af4fe1af46fe2f55" style="width: 100.0%; height: 100.0%;">Aqui habita uma bixona louca</div>')[0];
+                popup_c09289d36e3b46e5912847af24c3c9a1.setContent(html_60de6fa23bb84131af4fe1af46fe2f55);
+            
+
+            marker_8cf86a133b834947bc3af6e2e7e74d07.bindPopup(popup_c09289d36e3b46e5912847af24c3c9a1)
+            ;
+
+            
+        
+</script>

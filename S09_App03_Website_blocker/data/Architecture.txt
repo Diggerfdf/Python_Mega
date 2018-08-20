@@ -1,0 +1,2 @@
+Mac & Linux /etc/hosts
+Windows c:\Window\System32\drivers\etc
